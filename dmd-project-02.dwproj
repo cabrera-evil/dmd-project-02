@@ -6,10 +6,38 @@
     <Name>dmd-project-02.database</Name>
     <FullPath>dmd-project-02.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Dmd-project-02.ds</Name>
+      <FullPath>Dmd-project-02.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Dmd-project-02</Id>
+            <Name>Dmd-project-02</Name>
+            <Value xsi:type="xsd:string">Password=;Host=127.0.0.1;Username=;Database=dmd-project-02</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>Dmd-project-02</Id>
+            <Name>Dmd-project-02</Name>
+            <Value xsi:type="xsd:string">Npgsql</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Dmd-project-02</Id>
+            <Name>Dmd-project-02</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
