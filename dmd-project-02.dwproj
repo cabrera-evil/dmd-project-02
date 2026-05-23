@@ -6,12 +6,56 @@
     <Name>dmd-project-02.database</Name>
     <FullPath>dmd-project-02.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Dmd-project-02.cube</Name>
+      <FullPath>Dmd-project-02.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dmd-project-02.partitions</Name>
+          <FullPath>Dmd-project-02.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Country.dim</Name>
+      <FullPath>Dim Country.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Discount Band.dim</Name>
+      <FullPath>Dim Discount Band.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Product.dim</Name>
+      <FullPath>Dim Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Segment.dim</Name>
+      <FullPath>Dim Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Financials.dim</Name>
+      <FullPath>Fact Financials.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Dmd-project-02.ds</Name>
       <FullPath>Dmd-project-02.ds</FullPath>
     </ProjectItem>
   </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Dmd-project-02.dsv</Name>
+      <FullPath>Dmd-project-02.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
@@ -21,6 +65,11 @@
             <Id>Dmd-project-02</Id>
             <Name>Dmd-project-02</Name>
             <Value xsi:type="xsd:string">Password=;Host=127.0.0.1;Username=;Database=dmd-project-02</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>dmd-mssql</Id>
+            <Name>dmd-mssql</Name>
+            <Value xsi:type="xsd:string">Provider=MSOLEDBSQL19.1;Data Source=127.0.0.1;Persist Security Info=True;Password=;User ID=;Initial Catalog=dmd-project-02;Trust Server Certificate=True</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>
@@ -34,6 +83,11 @@
           <ConfigurationSetting>
             <Id>Dmd-project-02</Id>
             <Name>Dmd-project-02</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>dmd-mssql</Id>
+            <Name>dmd-mssql</Name>
             <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
